@@ -10,39 +10,22 @@ import mongoose from'mongoose';
 
   const app=express()
   app.use(express.json());
-  // it returns a promise
+  
   connectDB();
  
   
   app.use("/api/Employinfo",router);
   app.use("/api/user",user);
-// app.get("/",async(req,res)=>{
-   
- 
-//  });
-//  app.get("/:_id",async(req,res)=>{
-    
- 
-//  })
- 
-//  app.post("/",async(req,res)=>{
-    
-//  });
- 
-// //  app.post("/",async(req,res)=>{
 
-// //      let data=[req.body];
-// //      let result= await Employinfo.createMany(data);
-// //     res.send(result);
-// //  });
- 
-//  app.put("/:_id",async(req,res)=>{
-     
- 
-//  });
-//  app.delete("/:_id",async(req,res)=>{
-    
-//  });
  
  let Port=process.env.PORT || 8000
   app.listen(Port,console.log(`server is running on port ${Port}`));
+
+
+
+  //for hossting
+  //google cloud
+  //Azure -microsoft
+  //heroku
+  //vercel
+  //netlify
